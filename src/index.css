@@ -18,10 +18,53 @@ body {
   @apply bg-bg;
 }
 
-@keyframes crane {
+.crane {
+  animation: craneDown 1s ease-out forwards;
+}
+
+.pfp {
+  animation: pfpDown 1s ease-out forwards;
+}
+
+.heroText {
+  padding-right: 4px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 2s steps(25),
+    cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes craneDown {
   0% {
+    top: -1080px;
   }
 
   100% {
+    top: -592px;
+  }
+}
+
+@keyframes pfpDown {
+  0% {
+    top: -488px;
+  }
+
+  100% {
+    top: 0px;
   }
 }
