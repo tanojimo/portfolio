@@ -1,21 +1,74 @@
 [
   {
     "id": 1,
-    "name": "GingGong OS",
-    "description": "GingGong OS is a simple web os I made for stardance.",
-    "img": "/ginggongOS.png",
-    "github": "https://www.youtube.com",
-    "demo": "https://www.youtube.com",
+    "name": "Chronos Schima",
+    "description": "A simple web-game where the player identifies different shapes",
+    "img": "/projects/chronosSchima.png",
+    "github": "https://github.com/tanojimo/Chronos-Schima",
+    "demo": "https://tanojimo.github.io/Chronos-Schima/",
+    "righted": false,
+    "tags": ["html.svg", "react.svg", "tailwind.svg"],
+    "tagSize": 4,
+    "tagNumber": 2
+  },
+  {
+    "id": 2,
+    "name": "BitMaker 24",
+    "description": "Bitmaker 24 is a digital drum sequencer sized at only 3kb",
+    "img": "/projects/bitmaker24.png",
+    "github": "https://github.com/tanojimo/BitMaker-24",
+    "demo": "https://github.com/tanojimo/BitMaker-24/blob/master/dist/uri.txt",
+    "righted": true,
+    "tags": ["/html.svg", "/css.svg", "js.svg"]
+  },
+  {
+    "id": 3,
+    "name": "F1Synth",
+    "description": "F1Synth is a 3kb drum sequencer sized at only 3kb",
+    "img": "/projects/f1Synth.png",
+    "github": "https://github.com/tanojimo/F1Synth",
+    "demo": "https://github.com/tanojimo/F1Synth/blob/main/dist/uri.txt",
     "righted": false,
     "tags": ["/html.svg", "/css.svg", "js.svg"]
   },
   {
-    "id": 1,
+    "id": 4,
+    "name": "Handmonium",
+    "description": "Handmonium is python-based gesture controlled digital harmonium",
+    "img": "/projects/handmonium.png",
+    "github": "https://github.com/tanojimo/Handmonium",
+    "demo": "https://github.com/tanojimo/Handmonium/releases/tag/v1.0.0",
+    "righted": false,
+    "tags": ["python.svg", "openCV.svg"]
+  },
+
+  {
+    "id": 5,
+    "name": "PastelBox",
+    "description": "PastelBox is a lightweight, web-based jukebox that plays requested songs.",
+    "img": "/projects/pastelBox.png",
+    "github": "https://github.com/tanojimo/PastelBox",
+    "demo": "https://tanojimo.github.io/PastelBox/",
+    "righted": true,
+    "tags": ["/html.svg", "/css.svg", "js.svg"]
+  },
+  {
+    "id": 6,
     "name": "GingGong OS",
     "description": "GingGong OS is a simple web os I made for stardance.",
-    "img": "/ginggongOS.png",
-    "github": "https://www.youtube.com",
-    "demo": "https://www.youtube.com",
+    "img": "/projects/ginggongOS.png",
+    "github": "https://github.com/tanojimo/GingGongOS",
+    "demo": "https://tanojimo.github.io/GingGongOS/",
+    "righted": false,
+    "tags": ["/html.svg", "/css.svg", "js.svg"]
+  },
+  {
+    "id": 7,
+    "name": "PoriChoy",
+    "description": "Porichoy is a simple web based ID card creator.",
+    "img": "/projects/porichoy.png",
+    "github": "https://github.com/tanojimo/PoriChoy",
+    "demo": "https://tanojimo.github.io/PoriChoy/",
     "righted": true,
     "tags": ["/html.svg", "/css.svg", "js.svg"]
   }

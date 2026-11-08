@@ -5,25 +5,38 @@ const Project = ({ project }) => {
   return (
     <div ref={ref} className="card">
       <div
-        className={`relative grid grid-cols-5 w-100 h-40 bg-light rounded-xl mb-2 duration-1000 transition-transform ${
+        className={`relative grid grid-cols-5 w-100 h-40 bg-light rounded-xl mb-2 duration-1000 transition-transform hover:-translate-y-5 ${
           project.righted
-            ? `ml-auto mr-35 ${
+            ? `ml-auto mr-32 ${
                 visible ? "translate-x-0" : "translate-x-[110vw]"
               }`
             : `ml-32 ${visible ? "translate-x-0" : "translate-x-[-110vw]"}`
         }`}
       >
         <div className="col-span-2 h-full flex flex-col-reverse">
-          <div className="absolute -rotate-10 -left-11 -top-17 w-40 h-40 rounded-xl">
+          <a
+            href={project.github}
+            className="absolute -rotate-10 -left-11 -top-17 w-40 h-40 rounded-xl cursor-pointer"
+          >
             <img
               src={project.img}
               alt=""
               className="w-full h-full object-cover rounded-xl"
             />
-          </div>
-          <div className="flex gap-4 pl-4 pb-3">
-            {project.tags.map((img) => (
-              <img src={img} alt="" className="h-5" />
+          </a>
+          <div className="flex gap-4 pl-4 pb-3 items-center">
+            {project.tags.map((img, i) => (
+              <img
+                src={`/tags/${img}`}
+                alt=""
+                className={
+                  project.tagNumber === i
+                    ? project.tagSize
+                      ? `h-${project.tagSize}`
+                      : "h-5"
+                    : "h-5"
+                }
+              />
             ))}
           </div>
         </div>
@@ -33,13 +46,13 @@ const Project = ({ project }) => {
           <div className="flex gap-2 mt-3">
             <a
               href={project.github}
-              className="bg-dark w-20 h-7 rounded-xl flex justify-center items-center text-light text-sm"
+              className="bg-dark w-20 h-7 duration-100 rounded-xl flex justify-center items-center text-light text-sm"
             >
               Github
             </a>
             <a
               href={project.demo}
-              className="w-20 h-7 border-2 border-dark rounded-xl flex justify-center items-center text-dark text-sm"
+              className="w-20 h-7 border-2 hover:bg-dark hover:text-light duration-100 border-dark rounded-xl flex justify-center items-center text-dark text-sm"
             >
               Demo
             </a>
